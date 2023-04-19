@@ -1,9 +1,12 @@
-import Navbar from "./Navbar"
-import Tienda from "./pages/Tienda"
-import Home from "./pages/Home"
-import Comunidad from "./pages/Comunidad"
-import Contacto from "./pages/Contacto"
-import { Route, Routes } from "react-router-dom"
+import Navbar from "./Navbar";
+import Tienda from "./pages/Tienda";
+import Home from "./pages/Home";
+import Noticias from "./pages/Noticias";
+import Eventos from "./pages/Eventos";
+import Contacto from "./pages/Contacto";
+import Ayuda from "./pages/Ayuda"
+import Footer from "./pages/Footer";
+import { Route, Routes } from "react-router-dom";
 
 
 function App() {
@@ -12,12 +15,15 @@ function App() {
       <Navbar />
       <div className="text-center container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/tienda" element={<Tienda />} />
-          <Route path="/comunidad" element={<Comunidad />} />
+          <Route path="/noticias" element={<Noticias />} />
+          <Route path="/eventos" element={<Eventos />} />
           <Route path="/contacto" element={<Contacto />} />
+          <Route path="/ayuda" element={<Ayuda />} />
         </Routes>
       </div>
+      <Footer className="text-center"/>
     </>
   )
 }
