@@ -1,18 +1,21 @@
 import Navbar from "./Navbar"
-import Pricing from "./pages/Pricing"
+import Tienda from "./pages/Tienda"
 import Home from "./pages/Home"
-import About from "./pages/About"
+import Comunidad from "./pages/Comunidad"
+import Contacto from "./pages/Contacto"
 import { Route, Routes } from "react-router-dom"
+
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className="container">
+      <div className="text-center container">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/tienda" element={<Tienda />} />
+          <Route path="/comunidad" element={<Comunidad />} />
+          <Route path="/contacto" element={<Contacto />} />
         </Routes>
       </div>
     </>

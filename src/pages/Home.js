@@ -1,3 +1,10 @@
 export default function Home() {
-  return <h1>Home</h1>
+  return (
+    <div className="mb-4 text-black">
+      <h1 className="text-center display-3">Bienvenido a Pedal Partner</h1>
+      <br></br>
+      <hr className="hr" />
+    </div>
+    
+  );
 }

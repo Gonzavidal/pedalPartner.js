@@ -1,18 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
-.container {
-  margin: 1rem;
-  text-align: center;
-}
-
 .nav {
-  background-color: #333;
   color: white;
   display: flex;
   justify-content: space-between;
@@ -42,6 +28,10 @@ body {
   padding: .25rem;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+/*
 .nav li.active {
   background-color: #555;
 }
@@ -49,3 +39,5 @@ body {
 .nav li:hover {
   background-color: #777;
 }
+
+*/
