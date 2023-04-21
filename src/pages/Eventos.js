@@ -1,4 +1,4 @@
-import Mapa from '/workspace/Pedal_Partner/src/assets/mapa.jpg';
+import Mapa from '../assets/mapa.jpg';
 
 
 export default function Eventos() {

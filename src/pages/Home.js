@@ -1,4 +1,4 @@
-import Logo from '/workspace/Pedal_Partner/src/assets/logo.jpeg';
+import Logo from '../assets/logo.jpeg';
 
 
 export default function Home() {

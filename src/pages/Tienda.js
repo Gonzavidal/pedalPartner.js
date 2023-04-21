@@ -1,4 +1,4 @@
-import Maps from '/workspace/Pedal_Partner/src/assets/maps.jpg';
+import Maps from '../assets/maps.jpg';
 
 
 export default function Comunidad() {
@@ -13,49 +13,49 @@ export default function Comunidad() {
 
         </div>
         <div className="col">
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Nombre Tienda</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Nombre Tienda</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Jefe Tienda</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Jefe Tienda</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Contacto</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Contacto</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
           
-          <span class="mb-4">Medio de pago Disponibles</span>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label class="form-check-label" for="flexCheckDefault">
+          <span className="mb-4">Medio de pago Disponibles</span>
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+              <label className="form-check-label" for="flexCheckDefault">
                 Tarjetas
               </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label class="form-check-label" for="flexCheckDefault">
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+              <label className="form-check-label" for="flexCheckDefault">
                 Efectivo
               </label>
           </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label class="form-check-label" for="flexCheckDefault">
+          <div className="form-check">
+            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+              <label className="form-check-label" for="flexCheckDefault">
                 Transferencias
               </label>
           </div>
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Mantención desde $</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Mantención desde $</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Indumentaria desde $</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Indumentaria desde $</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
-          <div class="input-group input-group-sm mb-4">
-            <span class="input-group-text" id="inputGroup-sizing-sm">Bicicletas desde $</span>
-            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="input-group input-group-sm mb-4">
+            <span className="input-group-text" id="inputGroup-sizing-sm">Bicicletas desde $</span>
+            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
         </div>
       </div>
