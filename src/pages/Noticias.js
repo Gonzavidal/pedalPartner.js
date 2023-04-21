@@ -1,4 +1,4 @@
-import MVDP from '/workspace/Pedal_Partner/src/assets/MVDP.jpg';
+import MVDP from '../assets/MVDP.jpg';
 
 
 export default function Noticias() {

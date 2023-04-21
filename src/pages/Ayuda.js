@@ -5,20 +5,20 @@ export default function Ayuda() {
             <br></br>
             <hr className="hr" />
 
-            <div class="container text-center">
-                <div class="row">
-                    <div class="col">
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col">
                         Encuentra tu tienda
                     </div>
-                    <div class="col">
+                    <div className="col">
                         Contactanos
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
+                <div className="row">
+                    <div className="col">
                         Comunidad
                     </div>
-                    <div class="col">
+                    <div className="col">
                         Mapa de Sitio
                     </div>
                 </div>
