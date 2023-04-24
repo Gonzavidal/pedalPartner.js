@@ -1,6 +1,7 @@
 import Logo from '../assets/logo.jpeg';
 
 
+
 export default function Home() {
   return (
     <div className="container-fluid text-center">
