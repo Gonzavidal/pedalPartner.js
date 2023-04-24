@@ -12,8 +12,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <Navbar />
-      <div className="text-center container">
+    <Navbar />
         <Routes>
           <Route path="/home" element={<Home />} />
           <Route path="/tienda" element={<Tienda />} />
@@ -22,7 +21,6 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/ayuda" element={<Ayuda />} />
         </Routes>
-      </div>
       <Footer className="text-center"/>
     </>
   )
