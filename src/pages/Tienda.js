@@ -3,16 +3,15 @@ import Maps from '../assets/maps.jpg';
 
 export default function Comunidad() {
   return (
-    <div className="text-center mb-4 text-black">
-      <h1 className="display-3">Encuentra tu tienda</h1>
-      <br></br>
+    <div className="container-fluid text-center">
+      <h1>Encuentra tu tienda</h1>
       <hr className="hr" />
       <div className="row">
-        <div className="col">
-          <img src={Maps} alt="mapa" height="300" width="485" />
+        <div className="col-6">
+          <img src={Maps} alt="mapa" id="mapPhoto"/>
 
         </div>
-        <div className="col">
+        <div className="col-6">
           <div className="input-group input-group-sm mb-4">
             <span className="input-group-text" id="inputGroup-sizing-sm">Nombre Tienda</span>
             <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
