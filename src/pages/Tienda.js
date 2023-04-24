@@ -9,55 +9,67 @@ export default function Comunidad() {
       <div className="row">
         <div className="col-6">
           <img src={Maps} alt="mapa" id="mapPhoto"/>
-
-        </div>
-        <div className="col-6">
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Nombre Tienda</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
           </div>
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Jefe Tienda</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
-          </div>
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Contacto</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+        
+        <div className="col-6 px-5">
+          {/*exclusive div 4 text inputs*/}
+          <div className="row">
+            <div className="col-12 input-group">
+              <span className="input-group-text" id="inputGroup">Nombre Tienda</span>
+              <input type="text" className="form-control" aria-label="searchInput" aria-describedby="inputGroup" />
+            </div>
+            <div className="col-12 input-group my-3">
+              <span className="input-group-text" id="inputGroup">Jefe Tienda</span>
+              <input type="text" className="form-control" aria-label="searchInput" aria-describedby="inputGroup" />
+            </div>
+            <div className="col-12 input-group">
+              <span className="input-group-text" id="inputGroup">Contacto</span>
+              <input type="text" className="form-control" placeholder="+56 9 XXXX XXXX" aria-label="searchInput" aria-describedby="inputGroup" />
+            </div>
           </div>
           
-          <span className="mb-4">Medio de pago Disponibles</span>
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+          {/*div 4 checks + inputs*/}
+          <div className="row my-3">
+            <h5 className="col-12">Medios de Pago Disponibles</h5>
+            <div className="col-4 mx-auto">
+              <div className="form-check mx-auto">
+                <input className="form-check-input" type="checkbox" value="" id="pagoCheck"/>
+                  <label className="form-check-label" for="pagoCheck">
                 Tarjetas
-              </label>
-          </div>
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+                  </label>
+              </div>
+              <div className="form-check mx-auto">
+                <input className="form-check-input me-3" type="checkbox" value="" id="pagoCheck"/>
+                  <label className="form-check-label" for="pagoCheck">
                 Efectivo
-              </label>
-          </div>
-          <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+                  </label>
+              </div>
+              <div className="form-check mx-auto">
+                <input className="form-check-input" type="checkbox" value="" id="pagoCheck"/>
+                  <label className="form-check-label" for="pagoCheck">
                 Transferencias
-              </label>
+                  </label>
+              </div>
+            </div>
           </div>
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Mantención desde $</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+
+          {/*rest of info*/}
+          <div className='row'>
+          <div className="col-12 input-group">
+            <span className="input-group-text" id="inputGroup">Mantención desde</span>
+            <input type="text" className="form-control" placeholder="$" aria-label="searchInput" aria-describedby="inputGroup" />
           </div>
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Indumentaria desde $</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="col-12 input-group my-3">
+            <span className="input-group-text" id="inputGroup">Indumentaria desde</span>
+            <input type="text" className="form-control" placeholder="$" aria-label="searchInput" aria-describedby="inputGroup" />
           </div>
-          <div className="input-group input-group-sm mb-4">
-            <span className="input-group-text" id="inputGroup-sizing-sm">Bicicletas desde $</span>
-            <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" />
+          <div className="col-12 input-group">
+            <span className="input-group-text" id="inputGroup">Bicicletas desde</span>
+            <input type="text" className="form-control" placeholder="$" aria-label="searchInput" aria-describedby="inputGroup" />
           </div>
         </div>
       </div>
+    </div>
     </div>
 
 
