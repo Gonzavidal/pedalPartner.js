@@ -45,3 +45,7 @@ h1 {
 .col-6 {
   padding: 10px;
 }
+
+.dropdown-toggle::after {
+  display:none;
+}

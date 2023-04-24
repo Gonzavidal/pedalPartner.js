@@ -27,20 +27,20 @@ export default function Comunidad() {
           
           <span className="mb-4">Medio de pago Disponibles</span>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+            <input className="form-check-input" type="checkbox" value="" id="Tarjetas"/>
+              <label className="form-check-label" for="Tarjetas">
                 Tarjetas
               </label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+            <input className="form-check-input" type="checkbox" value="" id="Efectivo"/>
+              <label className="form-check-label" for="Efectivo">
                 Efectivo
               </label>
           </div>
           <div className="form-check">
-            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-              <label className="form-check-label" for="flexCheckDefault">
+            <input className="form-check-input" type="checkbox" value="" id="Transferencias"/>
+              <label className="form-check-label" for="Transferencias">
                 Transferencias
               </label>
           </div>
