@@ -3,19 +3,18 @@ import MVDP from '../assets/MVDP.jpg';
 
 export default function Noticias() {
   return (
-    <div className="text-center mb-4 text-black">
-      <h1 className="display-3">Noticias</h1>
-      <br></br>
+    <div className="container-fluid position-relative d-inline-block">
+      <h1 className="text-center">Noticias</h1>
       <hr className="hr" />
       <div className="row">
-        <div className="col">
-          <img src={MVDP} alt="MVDP" height="323" width="485" />
-
+        <div className="col-5 px-5">
+          <img src={MVDP} alt="MVDP" id='regPhoto' />
         </div>
-        <div className="col">
-          <p className="text-secondary text-end">Miercoles 12 de abril del 2023</p>
-          <h2 className="display-5 mb-5">El ciclista neerlandés Mathieu van der Poel conquista su primera París-Roubaix</h2>
-          <p className="text-justify">La 120ª edición de la carrera de la francesa París-Roubaix de un solo día se celebró este domingo.
+
+        <div className="col-7 px-4">
+          <p className="text-secondary text-end fs-6 my-0">Miercoles 12 de abril del 2023</p>
+          <h2 className="text-end my-3">El ciclista neerlandés Mathieu van der Poel conquista su primera París-Roubaix</h2>
+          <p className="text-end ms-4 fs-5">La 120ª edición de la carrera de la francesa París-Roubaix de un solo día se celebró este domingo.
             El neerlandés Mathieu van der Poel conquistó su primera París-Roubaix fascinando con su ataque a 15 km del final.
             Un total de 175 ciclistas pedalearon 257 kilómetros.
             Los accidentes dejaron fuera de la carrera a figuras como el ex campeón mundial de carreras eslovaco Peter Sagan mientras se preparaba para retirarse.

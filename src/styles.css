@@ -1,17 +1,4 @@
 
-.navbar {
-  color: white;
-  display: flex;
-  height: 70px;
-  font-size: 20px;
-  padding: 0px 15px !important;
-}
-
-.nav-item {
-  margin: 0px 10px;
-}
-
-
 .site-title {
   font-size: 2rem;
 }
@@ -21,7 +8,6 @@
   width: 38vw;
   height: 58vh;
   object-fit: cover;
-  margin: auto;
 }
 
 /*
@@ -38,7 +24,7 @@
 h1 {
   position: relative;
   font-size: 4vw;
-  padding: 15px 0px;
+  padding: 10px 0px;
   margin: 0px;
 }
 
