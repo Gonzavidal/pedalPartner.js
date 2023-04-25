@@ -23,7 +23,7 @@ function App() {
           <Route path="/contacto" element={<Contacto />} />
           <Route path="/ayuda" element={<Ayuda />} />
         </Routes>
-      <Footer className="text-center"/>
+      <Footer/>
     </>
   )
 }

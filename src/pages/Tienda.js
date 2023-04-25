@@ -11,7 +11,7 @@ export default function Comunidad() {
           <img src={Maps} alt="mapa" id="mapPhoto"/>
           </div>
         
-        <div className="col-6 px-5">
+        <div className="col-6 px-4">
           {/*exclusive div 4 text inputs*/}
           <div className="row">
             <div className="col-12 input-group">
@@ -30,8 +30,8 @@ export default function Comunidad() {
           
           {/*div 4 checks + inputs*/}
           <div className="row my-3">
-            <h5 className="col-12">Medios de Pago Disponibles</h5>
-            <div className="col-4 mx-auto">
+            <h4 className="col-12">Medios de Pago Disponibles</h4>
+            <div className="col-4 mx-auto fs-5">
               <div className="form-check mx-auto">
                 <input className="form-check-input" type="checkbox" value="" id="pagoCheck"/>
                   <label className="form-check-label" for="pagoCheck">
