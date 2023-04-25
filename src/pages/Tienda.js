@@ -3,12 +3,12 @@ import Maps from '../assets/maps.jpg';
 
 export default function Comunidad() {
   return (
-    <div className="container-fluid text-center">
+    <div className="container-fluid text-center position-relative d-inline-block">
       <h1>Encuentra tu tienda</h1>
       <hr className="hr" />
       <div className="row">
         <div className="col-6">
-          <img src={Maps} alt="mapa" id="mapPhoto"/>
+          <img src={Maps} alt="mapa" id="regPhoto"/>
           </div>
         
         <div className="col-6 px-4">
