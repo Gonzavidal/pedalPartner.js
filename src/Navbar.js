@@ -4,19 +4,19 @@ import { FaBars } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-danger px-3 fs-5">
-      <div className="container-fluid d-flex">
-        <a className="navbar-brand text-white" href="/home">Pedal Partner</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav className="row navbar navbar-expand-lg position-relative bg-danger fs-5 mx-0 py-0">
+      <div className="col-12 container-fluid py-1">
+        <a className="navbar-brand text-white mx-3 mt-1" href="/home">Pedal Partner</a>
+        <button className="navbar-toggler m-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end text-centered" id="#navbarSupportedContent">
+        <div className="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul className="navbar-nav">
-            <li className="nav-item my-auto mx-1">
-              <a className="nav-link active text-white" aria-current="page" href="/tienda">Encuentra tu tienda</a>
+            <li className="nav-item mx-3">
+              <a className="nav-link active text-white py-3" aria-current="page" href="/tienda">Encuentra tu tienda</a>
             </li>
-            <li className="nav-item dropdown my-auto mx-1">
-              <a className="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li className="nav-item dropdown mx-3">
+              <a className="nav-link dropdown-toggle text-white py-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Comunidad
               </a>
               <ul className="dropdown-menu text-white">
@@ -24,14 +24,14 @@ export default function Navbar() {
                 <li><a className="dropdown-item" href="/eventos">Eventos</a></li>
               </ul>
             </li>
-            <li className="nav-item my-auto mx-1">
-              <a className="nav-link text-white" href="/contacto">Contacto</a>
+            <li className="nav-item mx-3">
+              <a className="nav-link text-white py-3" href="/contacto">Contacto</a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              <FaBars class="fa-2x"/>
+            <li className="nav-item dropdown mx-3">
+              <a className="nav-link dropdown-toggle py-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <FaBars className="fa-2x text-white"/>
               </a>
-              <ul className="dropdown-menu text-white">
+              <ul className="dropdown-menu dropdown-menu-lg-end text-white">
                 <li><a className="dropdown-item">Usuario</a></li>
                 <li><a className="dropdown-item">Mi Perfil</a></li>
                 <li><a className="dropdown-item" href="/ayuda">Ayuda</a></li>

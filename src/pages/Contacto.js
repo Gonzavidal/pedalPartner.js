@@ -2,64 +2,83 @@
 
 export default function Contacto() {
   return (
-    <div classNameNameName="text-center mb-4 text-black">
-      <h1 classNameNameName="display-3">Contacto</h1>
-      <br></br>
-      <hr classNameNameName="hr" />
-      <span>Seleccione tipo de servicio</span>
-      <div className="form-check">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-        <label className="form-check-label" for="flexRadioDefault1">
-          Noticia
-        </label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-        <label className="form-check-label" for="flexRadioDefault2">
-          Evento
-        </label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-        <label className="form-check-label" for="flexRadioDefault1">
-          Mensaje
-        </label>
-      </div>
-      <div>
-        <span className="input-group-text" id="inputGroup">Titulo Evento/Noticia/Mensaje</span>
-        <input type="text" className="form-control" aria-label="searchInput" aria-describedby="inputGroup" />
-        <span className="input-group-text" id="inputGroup">Email Redactor</span>
-        <input type="text" className="form-control" aria-label="searchInput" aria-describedby="inputGroup" />
-      </div>
-      <div class="input-group">
-        <span class="input-group-text">Descripción</span>
-        <textarea class="form-control" aria-label="With textarea"></textarea>
-      </div>
-      <span>Destinatario Evento</span>
-      <div className="form-check">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
-        <label className="form-check-label" for="flexRadioDefault1">
-          Ciclista
-        </label>
-      </div>
-      <div className="form-check">
-        <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
-        <label className="form-check-label" for="flexRadioDefault2">
-          Mecánico
-        </label>
-      </div>
-      <span>Adjuntar archivo</span>
-      <div class="input-group">
-        <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload" />
-      </div>
-      <button
-        type="submit"
-        class="btn btn-danger btn-send  pt-2 btn-block"
-      >
-        Enviar
-      </button>
+    <div className="row container-fluid position-relative text-center mx-0">
+      <h1 className="col-12">Contacto</h1>
+      <hr className="col-12 hr my-2" />
 
-    </div>
+      {/* form container 4 whole body */}
+      <form className="col-12 mt-1 px-5 position-relative">
+        {/* row 4 first filter: service type + event public (optional) */}
+        <div className="row mx-5 px-5">
+          {/* half row: service type */}
+          <div className="col-6 text-start">
+            <h3>Seleccione tipo de servicio</h3>
+            <div className="container-fluid">
+              <div className="form-check ms-2 my-1 fs-5">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label" for="flexRadioDefault1">Noticia</label>
+              </div>
+              <div className="form-check ms-2 my-1 fs-5">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked />
+                <label className="form-check-label fs-5" for="flexRadioDefault2">Evento</label>
+              </div>
+              <div className="form-check ms-2 my-1 fs-5">
+                <input className="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" />
+                <label className="form-check-label fs-5" for="flexRadioDefault1">Mensaje</label>
+              </div>
+            </div>
+          </div>
+          {/* half row : conditional formcheck for event type */}
+          <div className="col-6 text-start">
+            <h3>Destinatario Evento</h3>
+            <div className="container-fluid">
+              <div className="form-check ms-2 my-1 fs-5">
+                <input className="form-check-input" type="checkbox" name="checkRecipient" id="recipientCiclista" />
+                <label className="form-check-label" for="#recipientCiclista">Ciclista</label>
+              </div>
+              <div className="form-check ms-2 my-1 fs-5">
+                <input className="form-check-input" type="checkbox" name="checkRecipient" id="recipientMecanico" />
+                <label className="form-check-label" for="#recipientMecanico">Mecánico</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/*row 4 rest of form : title, mail, textarea, files*/}
+        <div className="row mt-3 px-5">
+          <div className="row d-flex mb-3 fs-5">
+            <div className="col-7 form-floating d-flex">
+             <input type="text" className="form-control" id="inputTitle" aria-label="searchInput" aria-describedby="inputGroup" />
+             <label className="pt-2 mx-2" for="#inputTitle">Titulo</label>
+            </div>
+            <div className="col-5 form-floating d-flex">
+             <input type="text" className="form-control" id="inputEmail" aria-label="searchInput" aria-describedby="inputGroup" />
+             <label className="pt-2 mx-2" for="#inputEmail">Email</label>
+            </div>
+          </div>
+          <div className="row d-inline px-5">
+            <div className="col-10 mx-auto px-5">
+              <div className="form-floating my-0">
+               <textarea className="form-control" id="inputTextArea" aria-label="With textarea" style={{height:200}}/>
+                <label for="#inputTextArea" className="fs-5 pt-2 mx-1">Descripción</label>
+              </div>
+              </div>
+              <div className="col-5 d-flex mx-auto offset-md-3">
+                <label className="col-sm-5 my-auto form-label px-0" for="customFile">Adjuntar archivo</label>
+                <input type="file" className="col-sm-1 form-control mt-1" id="customFile" />
+              </div>
+
+          </div>
+          <div className="row mt-3">
+            <button type="submit" className="col-sm-1 mx-auto btn btn-danger fs-5 px-2">Enviar</button>
+            </div>
+        </div>
+        </form>
+        </div>
+
+
+  
+
 
   );
 }
