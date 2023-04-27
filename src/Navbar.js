@@ -36,7 +36,7 @@ export default function Navbar() {
                 <li><a className="dropdown-item">Mi Perfil</a></li>
                 <li><a className="dropdown-item" href="/ayuda">Ayuda</a></li>
                 <hr className="dropdown-divider" />
-                <li><a className="dropdown-item">Salir</a></li>
+                <li><a className="dropdown-item" href="/NoRegistrado">Salir</a></li>
               </ul>
             </li>
           </ul>
