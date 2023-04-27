@@ -33,3 +33,7 @@ h1 {
 .dropdown-toggle::after {
   display:none;
 }
+
+a, u {
+  text-decoration: none;
+}
